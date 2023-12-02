@@ -1,0 +1,149 @@
+/* ======== Google fonts ======== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* ======== BASE reset ======== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+body {
+    background: #FAFAFA;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0 2rem;
+}
+
+ul, li {
+    list-style: none;
+}
+
+input, button {
+    background: none;
+    border: none;
+}
+
+input[type="text"]:focus {
+    outline: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+.main {
+    width: 600px;
+}
+
+.header__text {
+    color: #18181B;
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* ======== Chat ======== */
+.chat__window {
+    background: #E4E4E7;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.chats {
+    max-height: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: .875rem;
+    margin-bottom: 2.75rem;
+    overflow: auto;
+}
+
+.chat {
+    width: fit-content;
+    max-width: 350px;
+    padding: .75rem 1rem;
+    margin-bottom: 4px;
+}
+
+.chat__bot {
+    margin-right: auto;
+}
+
+.chat__bot .chat {
+    color: #FAFAFA;
+    background: #2563EB;
+    border-radius: .5rem .5rem .5rem 2px;
+}
+
+.chat__user {
+    margin-left: auto;
+}
+
+.chat__user .chat {
+    color: #18181B;
+    background: #FAFAFA;
+    margin-left: auto;
+    border-radius: .5rem .5rem 2px .5rem;
+}
+
+.chat__user .timestamp {
+    justify-content: flex-end;
+}
+
+.timestamp {
+    color: #18181B;
+    font-size: .75rem;
+    display: flex;
+    align-items: center;
+    column-gap: 3px;
+}
+
+/* ======== Chat input ======== */
+.chat__input {
+    background: #FAFAFA;
+    border-radius: .5rem;
+}
+
+.chat__input form {
+    display: flex;
+    align-items: center;
+}
+
+.chat__input form input {
+    width: 100%;
+    padding: 1.35rem 1.5rem;
+}
+
+.chat__input form button {
+    width: 42px;
+    height: 38px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0.875rem;
+    border-radius: .25rem;
+}
+
+.chat__input form button:hover {
+    background-color: #E4E4E7;
+}
+
+/* ======== Chat scrollbar ======== */
+::-webkit-scrollbar {
+    width: 3px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #FAFAFA;
+}
